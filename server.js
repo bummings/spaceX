@@ -12,6 +12,6 @@ app.use(
   })
 );
 
-const PORT = 6666;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Server be runnin on port ${PORT}`));
